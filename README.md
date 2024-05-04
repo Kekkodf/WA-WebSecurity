@@ -1,5 +1,19 @@
 # Labs Presented during the Lecture "Web Security" of the course "Web Application" at the University of Padova - Prof. Nicola Ferro
 
+# Setup
+
+Go to the following link to download the VM image: https://drive.google.com/file/d/1l5WNoWdisWlNtBm_dXQ-inGeXyVjL0xc/view?usp=sharing
+
+It downloads a zip folder containing the VM image and the README file. The README file contains the user and the password to access the VM.
+The VM is a VirtualBox image. The VM is a Ubuntu 20.04 system and it is around 6.5GB.
+
+You can import it into VirtualBox by following these steps:
+
+1. Open VirtualBox.
+2. Click on the "File" menu and select "Import".
+3. Select the VM image file that you downloaded.and follow the instructions.
+4. Start the VM.
+
 # Lab 1: Cross-Site Scripting (XSS) Attack
 
 ## Description
