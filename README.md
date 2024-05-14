@@ -23,17 +23,27 @@ When the compose is up, you must also modify the `/etc/hosts` (or `/private/etc/
 sudo nano /etc/hosts
 ```
 Add the following lines:
+- SQL Injection Lab:
+    ```nano
+        # SQL Injection Lab
+        10.9.0.5        www.seed-server.com
+    ```
+
 - XSS Lab:
     ```nano
-
+        10.9.0.5        www.seed-server.com
+        10.9.0.5        www.example32a.com
+        10.9.0.5        www.example32b.com
+        10.9.0.5        www.example32c.com
+        10.9.0.5        www.example60.com
+        10.9.0.5        www.example70.com
     ```
 - CSRF Lab:
     ```nano
-
-    ```
-- SQL Injection Lab:
-    ```nano
-
+        # CSRF Lab
+        10.9.0.5        www.seed-server.com
+        10.9.0.5        www.example32.com
+        10.9.0.105      www.attacker32.com
     ```
 
 Finally, when you are done with the lab, you can stop the container with the following command:
@@ -68,7 +78,17 @@ You can import it into VirtualBox by following these steps:
 3. Select the VM image file that you downloaded, and follow the instructions.
 4. Start the VM and follow the instructions above for the Linux user.
 
-# Lab 1: Cross-Site Scripting (XSS) Attack
+# Lab 1: SQL Injection Attack
+
+## Description
+SQL Injection is a code injection technique that exploits a vulnerability in a Web Application by inserting malicious SQL code into the input fields. This code manipulates the database, allowing the attacker to access, modify, or delete data.
+
+## Tasks
+1. Basic SQL Injection Attack: Entering without a password.
+2. SQL Injection Attack: Changing the salary of the user.
+3. SQL Injection Attack: Changing the salary of another user.
+
+# Lab 2: Cross-Site Scripting (XSS) Attack
 
 ## Description
 XSS (Cross-Site-Scripting) is a vulnerability frequently encountered in Web Applications, enabling attackers to insert harmful code, like JavaScript, into a victim's web browser. This code allows the attacker to steal the victim's credentials, such as session cookies. Exploiting XSS vulnerabilities bypasses the access control measures, like the same origin policy, implemented by browsers to safeguard these credentials.
@@ -81,7 +101,7 @@ XSS (Cross-Site-Scripting) is a vulnerability frequently encountered in Web Appl
 Bonus not shown in the lab:
 1. XSS Attack: Self-propagating-attack to other users.
 
-# Lab 2: CSRF Attack
+# Lab 3: CSRF Attack
 
 ## Description
 A CSRF (Cross-Site Request Forgery) attack occurs when a user, who is logged into a trusted website, visits a malicious site. The malicious site then injects unauthorized HTTP requests into the user's session with the trusted site, leading to the execution of unwanted actions.
@@ -90,17 +110,9 @@ A CSRF (Cross-Site Request Forgery) attack occurs when a user, who is logged int
 1. Get familiar with the seed lab environment and the Mozilla HTTP Header Live extension.
 2. CSRF Attack: Change the description of the victim's profile.
 
-# Lab 3: SQL Injection Attack
-
-## Description
-SQL Injection is a code injection technique that exploits a vulnerability in a Web Application by inserting malicious SQL code into the input fields. This code manipulates the database, allowing the attacker to access, modify, or delete data.
-
-## Tasks
-1. Basic SQL Injection Attack: Entering without a password.
-2. SQL Injection Attack: Changing the salary of the user.
-3. SQL Injection Attack: Changing the salary of another user.
-
 # Credits
 Original work proposed by Wenliang Du, Syracuse University - Original SeedLabs Project
 Link: https://seedsecuritylabs.org/Labs_20.04/Web/
+
+Modified version: Francesco L. De Faveri
 
