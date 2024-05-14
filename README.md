@@ -80,6 +80,14 @@ You can import it into VirtualBox by following these steps:
 
 # Lab 1: SQL Injection Attack
 
+To start fresh use:
+
+```bash
+sudo rm -rf mysql_data
+```
+
+to restore the original data in the db.
+
 ## Description
 SQL Injection is a code injection technique that exploits a vulnerability in a Web Application by inserting malicious SQL code into the input fields. This code manipulates the database, allowing the attacker to access, modify, or delete data.
 
@@ -95,8 +103,8 @@ XSS (Cross-Site-Scripting) is a vulnerability frequently encountered in Web Appl
 
 ## Tasks
 1. Get familiar with the seed lab environment and the Mozilla HTTP Header Live extension.
-2. Print out the `cookie` value of a user of the Elgg WebApp.
-3. XSS Attack: Becoming the victim's friend.
+2. Changing the victim's description.
+3. XSS Attack: Becoming the victim's friend and propagate.
 
 Bonus not shown in the lab:
 1. XSS Attack: Self-propagating-attack to other users.
