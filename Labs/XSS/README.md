@@ -29,7 +29,7 @@
 </script>
 ```
 
-3. To become the victim's friend use the code and post-it as above in the About me of Samy:
+3. To become the victim's friend use the code and post it as above in the AboutMe of Samy:
 
 ```html
 <script id="worm" type="text/javascript">
