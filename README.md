@@ -31,6 +31,7 @@ Add the following lines:
 
 - XSS Lab:
     ```nano
+        # XSS Lab 
         10.9.0.5        www.seed-server.com
         10.9.0.5        www.example32a.com
         10.9.0.5        www.example32b.com
